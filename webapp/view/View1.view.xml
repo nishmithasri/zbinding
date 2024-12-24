@@ -1,0 +1,77 @@
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="zbinding.controller.View1"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
+	<Page id="page" title="{i18n>title}">
+		<content>
+			<IconTabBar>
+				<items>
+					<IconTabFilter text="BusinessPartnerId" icon="sap-icon://account">
+						<IconTabBar>
+						<items>
+						<IconTabFilter text="Id" icon="sap-icon://account">
+						<IconTabBar>
+						<items>
+						<IconTabFilter text="Id" icon="sap-icon://account">
+						</IconTabFilter>
+						</items>
+						</IconTabBar>
+						</IconTabFilter>
+						</items>
+						</IconTabBar>
+					</IconTabFilter>
+					<IconTabFilter text="CompanyName" icon="sap-icon://add-employee">
+						<content>
+							<Text text="this is all companynames" />
+						</content>
+					</IconTabFilter>
+					<IconTabFilter text="Address" icon="sap-icon://addresses">
+						
+							<form:SimpleForm id="SimpleFormDisplay354"
+								editable="false"
+								layout="ResponsiveGridLayout"
+								title="Address"
+								labelSpanXL="3"
+								labelSpanL="3"
+								labelSpanM="3"
+								labelSpanS="12"
+								adjustLabelSpan="false"
+								emptySpanXL="4"
+								emptySpanL="4"
+								emptySpanM="4"
+								emptySpanS="0"
+								columnsXL="1"
+								columnsL="1"
+								columnsM="1"
+								singleContainerFullSize="false">
+								<form:content>
+									<Label text="Name" />
+									<Text id="nameText" text="{SupplierName}" />
+									<Label text="Street/No." />
+									<Text text="{Street} {HouseNumber}" />
+									<Label text="ZIP Code/City" />
+									<Text text="{ZIPCode} {City}" />
+									<Label text="Country" />
+									<Text id="countryText" text="{Country}" />
+								</form:content>
+							</form:SimpleForm>
+
+
+						
+					</IconTabFilter>
+					<IconTabFilter text="WebAddress" icon="sap-icon://arobase">
+						<content>
+</content>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+			<IconTabBar>
+			<items>
+						<IconTabFilter text="Id" icon="sap-icon://account">
+						</IconTabFilter>
+						</items>
+						</IconTabBar>
+		</content>
+		<footer>
+		</footer>
+	</Page>
+</mvc:View>
